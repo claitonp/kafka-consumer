@@ -1,4 +1,4 @@
-package br.com.example.broker.consumer;
+package br.com.claitonp.broker.consumer.kafka.listener;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
