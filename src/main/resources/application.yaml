@@ -10,8 +10,13 @@ spring:
       bootstrap-servers: 127.0.0.1:9092
       group-id: group_id
       auto-offset-reset: earliest
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+#      properties: 
+#        "spring.json.add.type.headers": false
+#        "spring.json.trusted.packages": "*"
+
 
 # Topic name
 topic:
