@@ -8,23 +8,16 @@ spring:
   kafka: 
     consumer:
       bootstrap-servers: 127.0.0.1:9092
-      group-id: group_id
+      group-id: sistemaX
       auto-offset-reset: earliest
-#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-#      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
 #      properties: 
 #        "spring.json.add.type.headers": false
 #        "spring.json.trusted.packages": "*"
+#        "spring.json.value.default.type": br.com.claitonp.kafka.model.User
 
-
-# Topic name
-topic:
-  name:
-    consumer: meutopico
-
-# Common Kafka Properties
-auto:
-  create:
-    topics:
-      enable: true
+kafka:
+  topic:
+    meutopico: meutopico
+    outrotopico: outrotopico
